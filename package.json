@@ -1,15 +1,15 @@
 {
   "name": "gallery-scroller",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
-  "main": "index.js", 
+  "main": "dist/GalleryScroller.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["react","gallery","scroller"],
+  "author": "Kevinlinpr <kevinlinpr@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -19,6 +19,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
+    "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^4.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
