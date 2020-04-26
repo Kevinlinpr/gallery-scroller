@@ -3,9 +3,16 @@ import ReactDOM from 'react-dom';
 import GalleryScroller from '../src/index';
 import './app.css';
 const root = document.createElement('div');
+import Img1 from '../resources/demoImg/9.jpg';
+import Img2 from '../resources/demoImg/10.jpg';
+import Img3 from '../resources/demoImg/1.jpg';
+import Img4 from '../resources/demoImg/2.jpg';
+import Img5 from '../resources/demoImg/3.jpg';
+import Img6 from '../resources/demoImg/7.jpg';
+
 const resourcespropsList = [
     {
-        img: '../resources/demoImg/9.jpg',
+        img: Img1,
         marker: '独家',
         color: '#ff1744',
         onClick:()=>{
@@ -13,7 +20,7 @@ const resourcespropsList = [
         }
     },
     {
-        img: '../resources/demoImg/10.jpg',
+        img: Img2,
         marker: '直播',
         color: '#00b8d4',
         onClick:()=>{
@@ -21,7 +28,7 @@ const resourcespropsList = [
         }
     },
     {
-        img: '../resources/demoImg/1.jpg',
+        img: Img3,
         marker: '独家',
         color: '#ff1744',
         onClick:()=>{
@@ -29,7 +36,7 @@ const resourcespropsList = [
         }
     },
     {
-        img: '../resources/demoImg/2.jpg',
+        img: Img4,
         marker: '写真集',
         color: '#aa00ff',
         onClick:()=>{
@@ -37,7 +44,7 @@ const resourcespropsList = [
         }
     },
     {
-        img: '../resources/demoImg/3.jpg',
+        img: Img5,
         marker: '数字资源',
         color: '#00bfa5',
         onClick:()=>{
@@ -45,7 +52,7 @@ const resourcespropsList = [
         }
     },
     {
-        img: '../resources/demoImg/7.jpg',
+        img: Img6,
         marker: '直播',
         color: '#00b8d4',
         onClick:()=>{

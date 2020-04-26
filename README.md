@@ -54,7 +54,7 @@ const MyGalleryList = () => {
 
 | param                 | detail                                         | type     | require* |
 | --------------------- | ---------------------------------------------- | -------- | -------- |
-| img                   |  relative url string for image which each 'div' box display| string   |   true   |
+| img                   |  import object for image which each 'div' box display via relative url | object   |   true   |
 | marker              | the label about img you want to display(categray or the info)| string   |   true   |
 | color               | the background color for the marker              | string   |   true   |
 | onClick               | onClick Event handler(use it to route to the detail of the page)| function |   false  |
@@ -62,8 +62,9 @@ const MyGalleryList = () => {
 > CardObject - Example
 
 ```js
+import Img from '../resources/demoImg/9.jpg';
 {
-        img: '../resources/demoImg/7.jpg',
+        img: Img,
         marker: '直播',
         color: '#00b8d4',
         onClick:()=>{
