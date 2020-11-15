@@ -14,6 +14,7 @@ const resourcespropsList = [
         img: Img1,
         marker: '独家',
         color: '#ff1744',
+        duration:4000,
         onClick:()=>{
             console.log('go to 9.jpg 独家 #ff1744 url')
         }
@@ -22,6 +23,7 @@ const resourcespropsList = [
         img: Img2,
         marker: '直播',
         color: '#00b8d4',
+        duration:4000,
         onClick:()=>{
             console.log('go to 10.jpg 直播 #00b8d4 url')
         }
@@ -30,6 +32,7 @@ const resourcespropsList = [
         img: Img3,
         marker: '独家',
         color: '#ff1744',
+        duration:4000,
         onClick:()=>{
             console.log('go to 1.jpg 独家 #ff1744 url')
         }
@@ -38,6 +41,7 @@ const resourcespropsList = [
         img: Img4,
         marker: '写真集',
         color: '#aa00ff',
+        duration:4000,
         onClick:()=>{
             console.log('go to 2.jpg 写真集 #aa00ff url')
         }

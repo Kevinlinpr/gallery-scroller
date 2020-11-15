@@ -90,10 +90,25 @@ function GalleryCard(props){
 }
 
 
+let ScrollTimeout = null;
+
+
+
+
 export default function SelfAdaptionGalleryScroller(props){
     let [centerIndex,setCenterIndex] = useState(0);
     let [leftIndex,setLeftIndex] = useState(props.list.length-1);
     let [rightIndex,setRightIndex] = useState(1);
+
+    function waiteToScroll(){
+        clearTimeout(ScrollTimeout);
+        ScrollTimeout = setTimeout(()=>{
+            setCenterIndex((centerIndex+1)>(props.list.length-1)?0:(centerIndex+1));
+        },props.duration?props.duration:3000);
+    }
+    useEffect(()=>{
+        waiteToScroll();     
+    },[centerIndex])
 
     useEffect(()=>{
         setLeftIndex((centerIndex-1)<0?(props.list.length-1):(centerIndex-1));
