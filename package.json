@@ -1,8 +1,8 @@
 {
   "name": "gallery-scroller",
-  "version": "1.0.3",
-  "description": "",
-  "main": "dist/GalleryScroller.js",
+  "version": "1.0.4",
+  "description": "a light-weight React full screen gallery Scroller Component.",
+  "main": "dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config webpack.dev.js",

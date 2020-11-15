@@ -3,10 +3,13 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
     mode: 'production',
-    entry: './src/index.js',
+    entry: [
+        './src/index.js',
+        './src/v2/index.js'
+    ],
     output: {
         path: path.resolve(__dirname,'dist'),
-        filename: 'GalleryScroller.js',
+        filename: '[name].js',
         libraryTarget: 'commonjs2',
     },
     externals: {
